@@ -6,7 +6,7 @@ import ImageFour from "../images/banner-03.png"
 
 const GridSection = () => {
   return (
-    <div className='bg-gray-light py-10 px-20 grid grid-cols-2 grid-flow-row place-items-center'>
+    <div className='bg-graylight py-10 px-20 grid grid-cols-2 grid-flow-row place-items-center'>
         <div className=''><img src={ImageOne} alt="" /></div>
         <div className=''><img src={ImageTwo} alt="" /></div>
         <div className=''><img src={ImageFour} alt="" /></div>

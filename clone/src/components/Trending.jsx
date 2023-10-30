@@ -2,13 +2,19 @@ import React from 'react'
 import { Routes, Route, Link, BrowserRouter } from 'react-router-dom'
 import Latest from '../Pages/Latest'
 import BestSeling from '../Pages/BestSeling'
+import { MdLocalDining } from 'react-icons/md'
 
 const Trending = () => {
   return (
     <>
-        <div className='bg-gray-light py-10 px-10'>
-            <h1 className='bg-gray-light text-center font-bold text-3xl mb-6'>Trending Products</h1>
-            <div className='flex items-center justify-center gap-10'>
+        <div className='bg-graylight py-10 px-10'>
+            <h1 className='bg-graylight text-center font-bold text-3xl mb-6'>Trending Products</h1>
+            <div className='flex items-center justify-center gap-4 mt-4'>
+              <div className='w-41 h-1 bg-black'></div>
+              <MdLocalDining className='h-4 w-4' />
+              <div className='w-41 h-1 bg-black'></div>
+            </div>
+            <div className='flex items-center justify-center gap-10 mt-8'>
                 <Link to='/latest' className='bg-white text-black text-xl font-bold py-2 px-4 rounded-2xl'>Latest</Link>
                 <Link to='/bestseling' className='bg-white text-black text-xl font-bold py-2 px-4 rounded-2xl'>Best Selling</Link>
             </div>

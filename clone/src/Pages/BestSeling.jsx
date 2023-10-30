@@ -12,7 +12,7 @@ const BestSeling = (props) => {
       {image: Ofada, name: 'Ofada Rice with Sauce', price: '2200'},
   ]
 return (
-  <div className='flex items-center justify-around px-10 gap-10 bg-gray-light'>
+  <div className='flex items-center justify-around px-10 gap-10 bg-graylight'>
       {BestSelling.map((itemList, index) =>(
           <div className='w-54 flex items-center flex-col bg-white gap-2 p-4 mb-10'>
               <img src={itemList.image} alt="" className='h-54 w-full'/>

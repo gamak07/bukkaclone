@@ -8,19 +8,24 @@ import ShopCategories from './components/ShopCategories'
 import Trending from './components/Trending'
 import GridSection from './components/GridSection'
 import LatestNews from './components/LatestNews'
+import Others from './components/Others'
+import Headroom from 'react-headroom'
 
 function App() {
  
 
   return (
     <>
+      <Headroom>
         <Header />
+      </Headroom>
         <CarouselSection />
         <Info />
         <ShopCategories />
         <Trending />
         <GridSection />
         <LatestNews />
+        <Others />
     </>
   )
 }
