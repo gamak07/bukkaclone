@@ -19,45 +19,44 @@ const ShopCategories = () => {
         autoplay = {true}
         speed={800}
         loop
-        className='my-10 mx-20 flex '
+        className='my-11 mx-11 flex justify-center '
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
 
         <div className='my-10'>
-            <h1 className='text-center font-bold text-2xl'>Shop Categories</h1>
+            <h1 className='text-center font-bold font-philosopher text-2xl'>Shop Categories</h1>
             <div className='flex items-center justify-center gap-4 mt-4'>
                 <div className='w-41 h-1 bg-graylight'></div>
                 <MdLocalDining className='h-4 w-4' />
                 <div className='w-41 h-1 bg-graylight'></div>
             </div>
-            <div className='flex items-center justify-around gap-10 py-10'>
+            <div className='flex items-center justify-center gap-10'>
                 <SwiperSlide className='group flex items-center'>
-                    <img className='h-41 w-41' src={FirstDish} alt />
-                    <div className='text-white  bg-black font-bold text-xl w-38 pl-10 h-60'>
-                        <p className='text-white font-bold font-philosopher text-2xl text-right pr-10 
-                        group-hover:text-orangethree after:bg-orange after:h-1 after:w-12 after:absolute after:top-10 after:right-11'>Breakfast</p>
+                    <img className='h-41 w-41 group-hover:w-54 transition-width duration-1000' src={FirstDish} alt />
+                    <div className='flex justify-center text-white bg-black h-60 pt-6 pr-8 pl-10 group-hover:pl-none '>
+                        <p className='transition-margin duration-1000 text-white w-28 h-max text-right font-bold font-philosopher text-2xl group-hover:text-orangethree after:bg-orangefour after:h-3 after:w-12 after:absolute after:top-13 after:right-20'>Breakfast</p>
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className='group flex items-center'>
-                    <img className='h-41 w-41' src={SecondDish} alt />
-                    <div className='text-white  bg-black font-bold text-xl w-38 pl-10 h-60'>
-                        <p className='text-white font-bold font-philosopher text-2xl text-right pr-10 group-hover:text-orangethree after:bg-orange after:h-1 after:w-12 after:absolute after:top-10 after:right-11'>Main Dish</p>
+                <SwiperSlide className='group flex items-center '>
+                    <img className='h-41 w-41 group-hover:w-54 transition-width duration-1000' src={SecondDish} alt />
+                    <div className='flex justify-center text-white bg-black h-60 pt-6 pr-8 pl-10 group-hover:pl-none '>
+                        <p className='transition-margin duration-1000 text-white w-28 h-max text-center font-bold font-philosopher text-2xl group-hover:text-orangethree after:bg-orangefour after:h-3 after:w-12 after:absolute after:top-13 after:right-20'>Main Dish</p>
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className='group flex items-center'>
-                    <img className='h-41 w-41' src={ThirdDish} alt />
-                    <div className='text-white  bg-black font-bold text-xl w-38 pl-10 h-60'>
-                        <p className='text-white font-bold font-philosopher text-2xl text-right pr-10 group-hover:text-orangethree after:bg-orange after:h-1 after:w-12 after:absolute after:top-10 after:right-11'>Extra</p>
+                <SwiperSlide className='group flex items-center '>
+                    <img className='h-41 w-41 group-hover:w-54 transition-width duration-1000' src={ThirdDish} alt />
+                    <div className='flex justify-center text-white bg-black h-60 pt-6 pr-8 pl-10 group-hover:pl-none '>
+                        <p className='transition-margin duration-1000 text-white w-28 h-max text-center font-bold font-philosopher text-2xl group-hover:text-orangethree after:bg-orangefour after:h-3 after:w-12 after:absolute after:top-13 after:right-20'>Extra</p>
                     </div>
                 </SwiperSlide>
 
-                <SwiperSlide className='group flex items-center'>
-                    <img className='h-41 w-41' src={FourthDish} alt />
-                    <div className='text-white  bg-black font-bold text-xl w-38 pl-10 h-60 group-hover:pl- none'>
-                        <p className='text-white font-bold font-philosopher text-2xl text-right pr-10 group-hover:text-orangethree after:bg-orange after:h-1 after:w-12 after:absolute after:top-10 after:right-11'>Swallow</p>
+                <SwiperSlide className='group flex items-center '>
+                    <img className='h-41 w-41 group-hover:w-54 transition-width duration-1000' src={FourthDish} alt />
+                    <div className='flex justify-center text-white bg-black h-60 pt-6 pr-8 pl-10 group-hover:pl-none '>
+                        <p className='transition-margin duration-1000 text-white w-28 h-max text-center font-bold font-philosopher text-2xl group-hover:text-orangethree after:bg-orangefour after:h-3 after:w-12 after:absolute after:top-13 after:right-20'>Swallow</p>
                     </div>
                 </SwiperSlide>
             </div>

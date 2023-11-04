@@ -8,15 +8,15 @@ const Trending = () => {
   return (
     <>
         <div className='bg-graylight py-10 px-10'>
-            <h1 className='bg-graylight text-center font-bold text-3xl mb-6'>Trending Products</h1>
+            <h1 className='bg-graylight text-center font-bold font-philosopher text-3xl mb-6'>Trending Products</h1>
             <div className='flex items-center justify-center gap-4 mt-4'>
               <div className='w-41 h-1 bg-black'></div>
-              <MdLocalDining className='h-4 w-4' />
+              <MdLocalDining className='h-4 w-4 fill-red' />
               <div className='w-41 h-1 bg-black'></div>
             </div>
             <div className='flex items-center justify-center gap-10 mt-8'>
-                <Link to='/latest' className='bg-white text-black text-xl font-bold py-2 px-4 rounded-2xl'>Latest</Link>
-                <Link to='/bestseling' className='bg-white text-black text-xl font-bold py-2 px-4 rounded-2xl'>Best Selling</Link>
+                <Link to='/latest' className='bg-white text-black text-xl font-bold font-philosopher py-2 px-4 rounded-2xl'>Latest</Link>
+                <Link to='/bestseling' className='bg-white text-black text-xl font-bold font-philosopher py-2 px-4 rounded-2xl'>Best Selling</Link>
             </div>
         </div>           
         <Routes>

@@ -21,25 +21,35 @@ export default {
       orange: '#FC6701',
       orangetwo: '#ffc23e',
       orangethree: '#ffc000',
+      orangefour: '#da0b32',
       black: '#000',
-      white: '#ffff'
+      white: '#ffff',
+      footerColour: '#333',
+      realGray: '#ccc',
     },
     spacing: {
       none: '0',
+      500: '95%',
       1: '1px',
       2: '8px',
+      3: '2px',
       4: '1rem',
+      5: '5px',
       6: '1.5rem',
       8: '2rem',
       10: '2.5rem',
       11: '3rem',
       12: '3rem',
+      13: '3.5rem',
+      14: '3.2rem',
       20: '5rem',
       24: '6rem',
       28: '7rem',
+      32: '8rem',
       38: '9rem',
       40: '10rem',
       41: '12rem',
+      42: '13rem',
       54: '13.8rem',
       60: '15rem',
       80: '22rem',
@@ -53,7 +63,11 @@ export default {
     fontFamily:{
       poppins:['poppins'],
       philosopher:['philosopher']
-    }
+    },
+    transitionProperty:{
+      width: 'width',
+      margin: 'margin-left'
+    },
   },
   extend: {
       

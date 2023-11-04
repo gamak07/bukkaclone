@@ -9,6 +9,7 @@ import Trending from './components/Trending'
 import GridSection from './components/GridSection'
 import LatestNews from './components/LatestNews'
 import Others from './components/Others'
+import Footer from './components/Footer'
 import Headroom from 'react-headroom'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <GridSection />
         <LatestNews />
         <Others />
+        <Footer />
     </>
   )
 }

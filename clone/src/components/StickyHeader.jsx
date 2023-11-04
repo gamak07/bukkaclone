@@ -10,8 +10,8 @@ import { MdKeyboardArrowDown } from 'react-icons/md'
 
 const StickyHeader = () => {
   return (
-    <div className='h-24 w-full flex bg-orange items-center justify-around'>
-        <img src={Logo} alt="" className='mt-20 z-10 mobile:hidden'/>
+    <div className='h-24 w-full flex bg-orange items-center justify-around mobile:justify-between'>
+        <img src={Logo} alt="" className='mt-20 z-100 mobile:hidden'/>
         <ul className='flex items-center gap-10 font-bold text-white mobile:hidden'>
             <li className='group hover:bg-RealOrange p-4 rounded-curved transition ease-in-out duration-1000'>
               <a className='flex items-center' href="">About Us 
@@ -37,8 +37,11 @@ const StickyHeader = () => {
               </a>
             </li>
         </ul>
-        <div className="flex items-center mobile:flex items-center ">
-          <HiMenu className='hidden mobile:flex'/>
+        {/* added for mobile responsive */}
+        <HiMenu className='hidden mobile:flex'/>
+        {/* responsive */}
+
+        <div className="flex items-center mobile:flex mobile:items-center">
           <div className='flex gap-8 items-center mobile:flex items-center '>            
             <AiOutlineSearch className='text-2xl hover:fill-white'/>
             <IoPersonCircleSharp className='text-2xl hover:fill-white'/>
